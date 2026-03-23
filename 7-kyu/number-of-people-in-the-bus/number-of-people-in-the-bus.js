@@ -1,7 +1,8 @@
 var number = function(busStops){
-  let people = 0
-  for(let [on,off] of busStops){
-    people += on - off;
-  }
-  return people
+let total = 0
+for(let i = 0 ; i < busStops.length; i++){
+  total += busStops[i][0]
+  total -= busStops[i][1]
+}
+  return total
 }
